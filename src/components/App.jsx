@@ -28,11 +28,6 @@ function App() {
     });
   }
 
-  //create li based on item in array list
-  function createlist(list) {
-    return <li>{list}</li>;
-  }
-
   return (
     <div className="container">
       <div className="heading">
@@ -47,7 +42,10 @@ function App() {
       <div>
         <ul>
           {/* map = for each item will apply the function */}
-          {lists.map(createlist)}
+          {/* create li based on item in array list */}
+          {lists.map((list) => (
+            <li>{list}</li>
+          ))}
         </ul>
       </div>
     </div>
