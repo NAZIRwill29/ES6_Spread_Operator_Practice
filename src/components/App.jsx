@@ -26,6 +26,8 @@ function App() {
         listInput
       ];
     });
+    // clear the text in input
+    setListInput("");
   }
 
   return (
